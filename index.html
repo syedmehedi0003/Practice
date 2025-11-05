@@ -4,8 +4,162 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+        <style>
+            body{
+                width: 1200px;
+                margin: 0 auto;
+                border: 1px solid red;
+            }
+            .responsive-1{
+                border: 1px solid blueviolet;
+                margin: 10px 0px;
+            }
+            .layout-1{
+                display: flex;
+                width: 100%;
+                border: 2px solid burlywood;
+            }
+            .div-1{
+                background-color: rgb(138, 138, 223);
+                width: 40%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 300px;
+            }
+            .div-2{
+                background-color: blueviolet;
+                width: 60%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 300px;
+            }
+            /* grid  are missing*/
+            .fluid-img{
+                width: 100%;
+                border: 1px solid blue;
+                margin: 10px 0px;
+          
+            }
+             .img-col{
+                display: flex;
+                justify-content: center;
+             }
+          .img-1 img{
+                width: 500px;
+             }
+
+         .img-2 img{
+                width: 500px;
+             }
+
+             .response-design{
+             width: 100%;
+             border: 1px solid orangered;
+             margin: 10px 0px;
+             }
+
+             .div-container{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap:20px;
+             }
+
+             .div-text p{
+                padding: 20px;
+                margin: 20px 0px;
+                width: 90%;
+             }
+            .div-img img{
+                width: 500px;
+
+            }
+          
+             /* media screen stsrt here  */
+
+            @media screen and (max-width:576px) {
+          body{
+               width: 100%;
+            }
+            .layout-1{
+                flex-direction: column;
+                }
+                .div-1{
+                width: 100%;   
+                }
+                .div-2{
+                width: 100%;  
+                }
+
+              .img-col{
+                flex-direction: column;
+              }
+
+                .img-1 img{
+                width: 50%;
+             }
+            .img-2 img{
+                width: 50%;
+             }
+             .div-container{
+                flex-direction: column-reverse;
+             }
+              
+            }
+        </style>
+
 </head>
 <body>
-    <h1>My Work</h1>
+    <h1>My Practice</h1>
+
+    <section class="responsive-1">
+        <div class="layout-1">
+            <div class="div-1">
+                <h1>This is div 1</h1>
+            </div>
+            <div class="div-2">
+                <h1>This is div 2</h1>
+            </div>
+        </div>
+    </section>
+
+    <section class="responsive-2">
+        <div class="layout-2">
+           <h1>grid</h1>
+        </div>
+    </section>
+    <section class="fluid-img">
+
+        <div class="img-col">
+             <div class="img-1">
+                <h3>img1</h3>
+                    <img src="images/healthy.webp" alt="">
+             </div>
+            <div class="img-2">
+                <h3>img3</h3>
+                <!-- <img src="images/healthy03.png" alt=""> -->
+
+                 <img src="images/healthy.webp" alt="">
+            </div>
+        </div>
+
+    </section>
+
+    <section class="response-design">
+        <div class="div-container">
+            <div class="div-text">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit officia exercitationem rem corrupti dolor accusantium aliquid. Sunt excepturi, doloribus rem fuga, soluta delectus veritatis vero earum amet quibusdam beatae ipsa, alias assumenda obcaecati. Repudiandae minima sed cupiditate voluptatum provident aliquid aliquam, quae recusandae architecto nesciunt, aut expedita illum quia eveniet soluta at? Illum quas repellat dolorum excepturi magnam hic provident at? Iste incidunt officiis sequi, et vero dolorem, sunt ut accusantium labore perferendis amet nihil quam aspernatur odio saepe soluta alias sit, expedita cupiditate eos ab eius. Autem aliquam quas quos sit. Alias sunt vero expedita dolor iste similique minima.
+                </p>
+               
+            </div>
+
+            <div class="div-img">
+                <img src="images/metrorail.jpg" alt="">
+            </div>
+        </div>
+    </section>
 </body>
 </html>
